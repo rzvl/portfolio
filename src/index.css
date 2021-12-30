@@ -1,13 +1,46 @@
 @tailwind base;
 @tailwind components;
 
-.active {
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('fonts/CascadiaCode-Regular.woff2') format('woff2'),
+    url('fonts/CascadiaCode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('fonts/CascadiaCode-Bold.woff2') format('woff2'),
+    url('fonts/CascadiaCode-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('fonts/CascadiaCode-Italic.woff2') format('woff2'),
+    url('fonts/CascadiaCode-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.dark .active {
   background-color: #facc15;
   color: #404040;
 }
 
-.active:hover {
+.dark .active:hover {
   color: #262626 !important;
+}
+
+.active {
+  background-color: #f43f5e;
+  color: #f4f4f5;
+}
+
+.active:hover {
+  color: #fafafa !important;
 }
 
 @tailwind utilities;

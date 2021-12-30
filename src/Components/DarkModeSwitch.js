@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const DarkModeSwitch = () => {
+const DarkModeSwitch = ({ darkOrLightTextSetter }) => {
   const darkToggleBtn = (
     <div className="w-6 h-6 md:w-7 md:h-7 relative rounded-full transition duration-500 transform bg-yellow-400 -translate-x-2 p-1 text-gray-800">
       <svg
@@ -20,7 +20,7 @@ const DarkModeSwitch = () => {
   );
 
   const lightToggleBtn = (
-    <div className="w-6 h-6 md:w-7 md:h-7 relative rounded-full transition duration-500 transform bg-gray-700 translate-x-full p-1 text-white">
+    <div className="w-6 h-6 md:w-7 md:h-7 relative rounded-full transition duration-500 transform bg-rose-500 translate-x-full p-1 text-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -60,12 +60,14 @@ const DarkModeSwitch = () => {
       setTimeout(() => {
         setToggleBtn(lightToggleBtn);
         document.documentElement.classList.remove('dark');
+        darkOrLightTextSetter();
       }, 250);
     } else {
       localStorage.theme = 'dark';
       setTimeout(() => {
         setToggleBtn(darkToggleBtn);
         document.documentElement.classList.add('dark');
+        darkOrLightTextSetter();
       }, 250);
     }
   };
