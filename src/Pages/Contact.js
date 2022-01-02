@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen w-full lg:pl-32 bg-zinc-100 dark:bg-zinc-800">
       <div className="container flex flex-col justify-center items-start w-5/6 mx-auto py-20 space-y-3">
-        <PageTitle title={'Contact Me'} bg={'contact'} />
+        <PageTitle title={'Contact Me'} bg={'Contact'} />
         {/* left and right columns */}
         <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
           {/* left column (contact info) */}
@@ -54,7 +54,7 @@ const Contact = () => {
             </div>
           </div>
           {/* right column (form) */}
-          <div className="bg-zinc-800 dark:bg-zinc-100 py-12 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12 rounded-lg">
+          <div className="bg-zinc-100 dark:bg-zinc-800 border-2 border-rose-500 dark:border-yellow-400 shadow-lg dark:shadow-black py-12 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12 rounded-lg">
             <div className="max-w-lg mx-auto lg:max-w-none">
               <form
                 action="#"

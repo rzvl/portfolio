@@ -1,6 +1,6 @@
 const PageTitle = ({ title, bg }) => {
   return (
-    <h2 className="w-full flex flex-col justify-center items-center">
+    <h2 className="w-full flex flex-col justify-center items-center mb-12 sm:mb-0">
       <span className="text-5xl font-extrabold text-rose-500 dark:text-yellow-400 z-10">
         {title}
       </span>
