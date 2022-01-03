@@ -15,5 +15,3 @@ const Button = ({ type, btnText }) => {
 };
 
 export default Button;
-
-// border border-zinc-800 dark:border-yellow-400
