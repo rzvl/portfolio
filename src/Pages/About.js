@@ -82,7 +82,7 @@ const About = () => {
               Location
             </span>
             <span className="text-zinc-500 dark:text-zinc-300">
-              Shiraz, Iran
+              Izmir, Turkey
             </span>
           </span>
           <span className="flex flex-col justify-center items-center">

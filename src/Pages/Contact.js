@@ -59,8 +59,10 @@ const Contact = () => {
               <form
                 action="#"
                 method="POST"
+                name="contact"
                 className="grid grid-cols-1 gap-y-6"
               >
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
                   <label htmlFor="full_name" className="sr-only">
                     Full name
@@ -85,19 +87,6 @@ const Contact = () => {
                     autoComplete="email"
                     className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-rose-500 dark:focus:ring-yellow-500 focus:border-rose-500 dark:focus:border-yellow-500 border-gray-300 rounded-md"
                     placeholder="Email"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="sr-only">
-                    Phone
-                  </label>
-                  <input
-                    type="text"
-                    name="phone"
-                    id="phone"
-                    autoComplete="tel"
-                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-rose-500 dark:focus:ring-yellow-500 focus:border-rose-500 dark:focus:border-yellow-500 border-gray-300 rounded-md"
-                    placeholder="Phone"
                   />
                 </div>
                 <div>
