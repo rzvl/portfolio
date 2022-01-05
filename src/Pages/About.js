@@ -10,8 +10,8 @@ const About = () => {
         <PageTitle title={'About Me'} bg={'About'} />
 
         {/* imgae and description section */}
-        <div className="w-full flex flex-col lg:flex-row justify-center gap-20 pb-10">
-          <div className="relative w-96 aspect-auto">
+        <div className="w-full flex flex-col lg:flex-row justify-center gap-20 pb-10 2xl:pb-20">
+          <div className="relative xs:w-96 mx-auto lg:mx-0">
             {/* left column - image */}
             <div className="group">
               <img
@@ -20,10 +20,10 @@ const About = () => {
                 srcSet={`${reza400}, ${reza800} 2x`}
                 className="w-80 h-96 z-10 relative group-hover:grayscale transition-all duration-1000"
               />
-              <span className="block box-content absolute w-80 h-96 top-10 group-hover:-top-2 left-10 group-hover:-left-2 border-8 border-rose-500 dark:border-yellow-400 group-hover:border-zinc-400 transition-all duration-1000"></span>
+              <span className="hidden xs:block box-content absolute w-80 h-96 top-10 group-hover:-top-2 left-10 group-hover:-left-2 border-8 border-rose-500 dark:border-yellow-400 group-hover:border-zinc-400 transition-all duration-1000"></span>
             </div>
           </div>
-          <div className="w-auto lg:w-1/2">
+          <div className="w-auto lg:w-1/2 xs:pt-12 lg:pt-0">
             {/* right column - text */}
             <div className="text-zinc-600 dark:text-zinc-200 space-y-3">
               <p className="text-2xl">

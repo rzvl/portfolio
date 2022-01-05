@@ -3,17 +3,15 @@ import ProjectCard from '../Components/ProjectCard';
 import PortfolioImg from '../img/portfolio.png';
 
 const Works = () => {
-  const portfolioDesc = () => {
-    return (
-      <>
-        This is a <span className="font-bold">portfolio website</span> (the
-        website you're browsing now) which I developed to showcase my recent
-        works and provide some infomation about me, myself, and I...{' '}
-        <span className="italic">React</span> was used for developing and{' '}
-        <span className="italic">Tailwind CSS</span> for styling the site.
-      </>
-    );
-  };
+  const portfolioDesc = (
+    <>
+      This is a <span className="font-bold">portfolio website</span> (the
+      website you're browsing now) which I developed to showcase my recent works
+      and provide some infomation about me, myself, and I...{' '}
+      <span className="italic">React</span> was used for developing and{' '}
+      <span className="italic">Tailwind CSS</span> for styling the site.
+    </>
+  );
 
   return (
     <div className="min-h-screen w-full lg:pl-32 bg-zinc-100 dark:bg-zinc-800">
@@ -24,7 +22,7 @@ const Works = () => {
           alt={'my portfolio website'}
           tags={['react', 'tailwind']}
           title={'My Portfolio Site'}
-          description={portfolioDesc()}
+          description={portfolioDesc}
           siteUrl={'/'}
           sourceUrl={'https://github.com/rzvl/portfolio'}
           hideSourceUrl={'false'}

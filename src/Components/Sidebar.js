@@ -15,7 +15,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="hidden lg:block fixed w-32 h-screen bg-rose-100 dark:bg-zinc-900 border-r-2 border-zinc-200 dark:border-zinc-700 shadow-zinc-900">
+    <div className="hidden lg:block z-10 fixed w-32 h-screen bg-rose-100 dark:bg-zinc-900 border-r-2 border-zinc-200 dark:border-zinc-700 shadow-zinc-900">
       <div className="flex flex-col justify-center items-center h-32">
         <DarkModeSwitch darkOrLightTextSetter={darkOrLightTextSetter} />
         <div className="text-sm text-rose-400 dark:text-yellow-200 pt-5">

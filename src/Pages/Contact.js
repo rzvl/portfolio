@@ -46,7 +46,7 @@ const Contact = () => {
                       className="flex-shrink-0 h-6 w-6 text-zinc-400 dark:text-zinc-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">admin@rezavali.me</span>
+                    <span className="ml-3">admin@rzvl.me</span>
                   </dd>
                 </div>
               </dl>

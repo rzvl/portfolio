@@ -23,32 +23,32 @@ const ProjectCard = ({
 
   return (
     <div className="px-4 pb-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-16">
-      <div className="flex flex-col max-w-screen-lg overflow-hidden bg-zinc-50 dark:bg-zinc-900 border rounded-lg shadow-xl dark:shadow-black lg:flex-row sm:mx-auto">
+      <div className="flex flex-col max-w-screen-lg overflow-hidden bg-zinc-50 dark:bg-zinc-900 border-2 border-rose-500 dark:border-yellow-400 rounded-lg shadow-xl dark:shadow-black lg:flex-row sm:mx-auto">
         <div className="relative lg:w-1/2">
           <img
             src={src}
             alt={alt}
-            className="object-cover w-full lg:absolute h-80 lg:h-full"
+            className="object-fill lg:object-cover object-left w-full lg:absolute lg:h-full"
           />
           <svg
-            className="absolute top-0 right-0 hidden h-full text-zinc-50 dark:text-zinc-900 lg:inline-block"
+            className="absolute top-0 right-0 hidden h-full text-zinc-50 dark:text-zinc-800 lg:inline-block"
             viewBox="0 0 20 104"
             fill="currentColor"
           >
             <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104"></polygon>
           </svg>
         </div>
-        <div className="flex flex-col justify-center p-8 bg-zinc-50 dark:bg-zinc-900 lg:p-16 lg:pl-10 lg:w-1/2">
+        <div className="flex flex-col justify-center p-8 bg-zinc-50 dark:bg-zinc-800 lg:p-16 lg:pl-10 lg:w-1/2">
           <div>
             <ul>{projectTags}</ul>
           </div>
-          <h5 className="mb-3 text-3xl font-extrabold leading-none text-zinc-800 dark:text-zinc-200 sm:text-4xl">
+          <h5 className="mb-3 text-3xl font-extrabold leading-10 text-zinc-800 dark:text-zinc-200 sm:text-4xl">
             {title}
           </h5>
           <p className="py-5 mb-5 text-zinc-800 dark:text-zinc-300">
             {description}
           </p>
-          <div className="flex items-center">
+          <div className="flex flex-wrap items-center gap-y-5">
             <a
               href={siteUrl}
               target="_blank"
@@ -68,7 +68,7 @@ const ProjectCard = ({
               aria-label=""
               className={classNames(
                 hideSourceUrl === 'true' ? 'hidden' : 'inline-flex',
-                'items-center text-lg underline transition-colors duration-200 text-deep-purple-accent-400 text-zinc-800 dark:text-zinc-100 hover:text-rose-600 dark:hover:text-yellow-400'
+                'items-center text-lg underline transition-colors duration-300 text-deep-purple-accent-400 text-zinc-800 dark:text-zinc-100 hover:text-rose-600 dark:hover:text-yellow-400'
               )}
             >
               View Source
