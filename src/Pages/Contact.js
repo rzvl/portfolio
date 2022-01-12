@@ -64,7 +64,11 @@ const Contact = () => {
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <div>
-                  <label htmlFor="full_name" className="sr-only">
+                  <label
+                    htmlFor="full_name"
+                    required="required"
+                    className="sr-only"
+                  >
                     Full name
                   </label>
                   <input
@@ -87,6 +91,7 @@ const Contact = () => {
                     autoComplete="email"
                     className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-rose-500 dark:focus:ring-yellow-500 focus:border-rose-500 dark:focus:border-yellow-500 border-gray-300 rounded-md"
                     placeholder="Email"
+                    required="required"
                   />
                 </div>
                 <div>
@@ -100,6 +105,7 @@ const Contact = () => {
                     className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-rose-500 dark:focus:ring-yellow-500 focus:border-rose-500 dark:focus:border-yellow-500 border-gray-300 rounded-md"
                     placeholder="Message"
                     defaultValue={''}
+                    required="required"
                   />
                 </div>
                 <Button type={'submit'} btnText={'Submit'} />

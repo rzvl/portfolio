@@ -11,7 +11,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        mono: ['Cascadia Code', ...defaultTheme.fontFamily.mono],
       },
     },
   },

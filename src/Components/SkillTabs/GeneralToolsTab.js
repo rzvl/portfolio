@@ -3,6 +3,11 @@ import ProgressBarWithTitle from '../ProgressBarWithTitle';
 const GeneralToolsTab = () => {
   return (
     <div>
+      <ProgressBarWithTitle
+        title={'Wordpress'}
+        progress={'90%'}
+        barId={'wordpress'}
+      />
       <ProgressBarWithTitle title={'Git'} progress={'80%'} barId={'git'} />
       <ProgressBarWithTitle
         title={'GitHub'}

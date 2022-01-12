@@ -16,11 +16,11 @@ const About = () => {
             <div className="group">
               <img
                 src={reza400}
-                alt=""
+                alt="Reza Vali"
                 srcSet={`${reza400}, ${reza800} 2x`}
-                className="w-80 h-96 z-10 relative group-hover:grayscale transition-all duration-1000"
+                className="max-w-80 max-h-96 z-10 relative group-hover:scale-75 group-hover:grayscale transition-all duration-1000"
               />
-              <span className="hidden xs:block box-content absolute w-80 h-96 top-10 group-hover:-top-2 left-10 group-hover:-left-2 border-8 border-rose-500 dark:border-yellow-400 group-hover:border-zinc-400 transition-all duration-1000"></span>
+              <span className="hidden xs:block box-content absolute w-80 h-96 top-10 group-hover:-top-2 left-10 group-hover:-left-2 border-8 border-rose-500 dark:border-yellow-400 transition-all duration-1000"></span>
             </div>
           </div>
           <div className="w-auto lg:w-1/2 xs:pt-12 lg:pt-0">
