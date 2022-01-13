@@ -25,7 +25,7 @@ const SocialMediaIcons = () => {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/rezavali/"
+        href="https://www.linkedin.com/in/rzvl/"
         target="_blank"
         rel="noreferrer"
         className="text-zinc-800 dark:text-zinc-100 hover:text-rose-500 dark:hover:text-yellow-400 inline-flex items-center transition duration-500"

@@ -108,7 +108,7 @@ const Contact = () => {
                     required="required"
                   />
                 </div>
-                <Button type={'submit'} btnText={'Submit'} />
+                <Button type={'button'} text={'Submit'} btnType="submit" />
               </form>
             </div>
           </div>

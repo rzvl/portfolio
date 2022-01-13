@@ -1,7 +1,9 @@
+import Button from '../Components/Button';
 import PageTitle from '../Components/PageTitle';
 import SocialMediaIconsLg from '../Components/SocialMediaIconsLg';
 import reza400 from '../img/reza-400.jpg';
 import reza800 from '../img/reza-800.jpg';
+import pdf from '../docs/my-cv.pdf';
 
 const About = () => {
   return (
@@ -52,7 +54,18 @@ const About = () => {
                 watching English movies, or just spending time with family or
                 friends.
               </p>
-              <SocialMediaIconsLg />
+              <div className="pb-5 flex justify-center">
+                <Button
+                  type={'a'}
+                  text={'Download My CV'}
+                  href={pdf}
+                  target={'_blank'}
+                  rel={'noreferrer'}
+                />
+              </div>
+              <div className="flex justify-around border border-rose-500 dark:border-yellow-400 rounded">
+                <SocialMediaIconsLg />
+              </div>
             </div>
           </div>
         </div>
@@ -82,7 +95,7 @@ const About = () => {
               Location
             </span>
             <span className="text-zinc-500 dark:text-zinc-300">
-              Izmir, Turkey
+              Shiraz, Iran
             </span>
           </span>
           <span className="flex flex-col justify-center items-center">
