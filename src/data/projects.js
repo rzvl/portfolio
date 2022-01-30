@@ -1,5 +1,6 @@
 import img1 from '../img/colmar.png';
 import img2 from '../img/portfolio.png';
+import img3 from '../img/coinspy.png';
 
 const projects = [
   {
@@ -37,6 +38,23 @@ const projects = [
     ),
     projectUrl: '/',
     projectSrc: 'https://github.com/rzvl/portfolio',
+    hideSrcBtn: 'false',
+  },
+  {
+    id: 3,
+    imgUrl: img3,
+    imgAlt: 'CoinSpy Websit',
+    tags: ['react', 'redux', 'styled components', 'rest api', 'charts.js'],
+    title: 'CoinSpy App',
+    description: (
+      <>
+        CoinSpy is a crypto info app which delivers reliable and up-to-date data
+        and news about cryptocurrencies. Redux was used for state management and
+        api manipulation. Charts.js was also used for creating charts.
+      </>
+    ),
+    projectUrl: 'https://coin-spy.netlify.app/',
+    projectSrc: 'https://github.com/rzvl/coinspy',
     hideSrcBtn: 'false',
   },
 ];
