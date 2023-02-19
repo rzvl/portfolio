@@ -1,6 +1,6 @@
 # My Portfolio Site
 
-[Live Demo](https://rzvl.me)
+[Live Demo](https://rzvl.netlify.app/)
 
 ## General Information
 
